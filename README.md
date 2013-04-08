@@ -21,6 +21,11 @@ Playing with a robot to learn JavaScript, AJAX and a touch of Node.js
 6. Update your path
 ``echo "PATH=/usr/local/share/npm/bin:$PATH" >> ~/.bash_profile;. ~/.bash_profile``
 
+For those of you that are having trouble running coffee, create a symlink using the code below while in your project directory
+ln -s `pwd`/node_modules/coffee-script/bin/coffee coffee
+
+Note: You may need to run coffee by using ./coffee
+
 ## Setting Up Bluetooth (Mac OSX)
 
 1. Click the bluetooth icon on your utilities navbar
