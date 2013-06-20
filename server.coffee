@@ -6,7 +6,7 @@ moch = ( process.argv.indexOf("--dry-run") != -1 );
 
 if bluetooth
   opts = 
-    port: "/dev/tty.FireFly-CB32-RNI-SPP"
+    port: "/dev/tty.FireFly-FC8C-RNI-SPP"
     baud: 115200
 else
   opts = 
