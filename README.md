@@ -1,30 +1,43 @@
 # Mc HammerBot
-Playing with a robot to learn JavaScript, AJAX and a touch of Node.js
+Playing with a robot to learn AJAX, CoffeeScript, and a touch of Node.js.
 
 ## Installation
 
 1. Install NodeJS
-``brew install nodejs``
+```bash
+$ brew install nodejs
+```
 
 2. Use the Node Packaged Modules (npm) command to install CoffeeScript
-``npm install -g coffee-script``
+```bash
+$ npm install -g coffee-script
+```
 
 3. Clone the repository
-``git clone https://github.com/bitmakerlabs/mc_hammer_bot.git``
+```bash
+$ git clone https://github.com/bitmakerlabs/mc_hammer_bot.git
+```
 
 4. Move to the cloned repo's directory
-``cd mc_hammer_bot``
+```bash
+$ cd mc_hammer_bot
+```
 
 5. Install Node Package Modules
-``npm install``
+```bash
+$ npm install
+```
 
 6. Update your path
-``echo "PATH=/usr/local/share/npm/bin:$PATH" >> ~/.bash_profile;. ~/.bash_profile``
+```bash
+$ echo "PATH=/usr/local/share/npm/bin:$PATH" >> ~/.bash_profile;. ~/.bash_profile
+```
 
-For those of you that are having trouble running coffee, create a symlink using the code below while in your project directory
-ln -s `pwd`/node_modules/coffee-script/bin/coffee coffee
-
-Note: You may need to run coffee by using ./coffee
+For those of you that are having trouble running coffee, while in your project directory enter this:
+```bash
+$ ln -s `pwd`/node_modules/coffee-script/bin/coffee coffee
+```
+(This creates a symlink.)
 
 ## Setting Up Bluetooth (Mac OSX)
 
@@ -42,7 +55,10 @@ Note: You may need to run coffee by using ./coffee
 ## Running the Server
 
 ### To Connect to the Mc Hammer Bot via Command Line Interface
-`coffee cli.coffee`
+```bash
+$ coffee cli.coffee
+```
+Note: You may need to type `./coffee` instead of `coffee`
 
 Keyboard Controls:
 
@@ -52,10 +68,16 @@ Keyboard Controls:
 * x = Stop Motion
 
 ### To Connect to the Mc Hammer Bot via Web Interface
-`coffee server.coffee`
+```bash
+$ coffee server.coffee
+```
+Note: You may need to type `./coffee` instead of `coffee`
 
 ### To Connect to a mockup / testing bot
-`coffee server.coffee --dry-run`
+```bash
+$ coffee server.coffee --dry-run
+```
+Note: You may need to type `./coffee` instead of `coffee`
 
 The above commands will start the server on "http://localhost:8071" and the two routes available are "http://localhost:8071/motors" and "http://localhost:8071/motion-control".
 
@@ -96,30 +118,18 @@ A forward value of -1 represents the motor combination: {a: -1, s: -1, d: -1, f:
 #### Strafe Left
 - A strafe value of -1 represents the motor combination: {a: -1, s: +1, d: +1, f: -1}
 
-## How to get the xbox 360 controller to work under OSX (Sometimes)
-
-1. Install the xbox 360 driver from http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver
-2. Restart your computer when prompted
-3. Hope for the best
-
-http://people.mozilla.com/~tmielczarek/mouselock+gamepad/
-
 ## Your Assignment
 
-Your assignemnt is to use javascript, css, html, and optionally rails to build a user interface that connects to the Mc Hammer Bot using jquery's ajax functions to control the robot via the API outlined above.
+Your assignemnt is to use JavaScript, CSS, HTML to build a user interface that connects to the Mc Hammer Bot using jquery's ajax functions to control the robot via the API outlined above.
 
 * You will get a chance to control the robot with your code but we will have to take turns. Sign up in the back of the class if you would like to use the robot. Robot control is first come, first serve.
 
-* You do **not** need the robot to test out your user interface. The server has a --dry-run option (see above: "To Connect to a mockup / testing bot") which allows you to run it without connecting a robot. This mode is specifically made for testing. Keep an eye on the server's command line output and you will be able to see if it is responding to your requests and controlling the robot in a way that you expect.
-
-### Due Date
-
-This assignment is due Monday afternoon.
+* You do **not** need the robot to test out your user interface. The server has a --dry-run option (see above: "To Connect to a mockup / testing bot") which allows you to run it without connecting a robot. This mode is specifically made for testing. Keep an eye on the server's command line output and you will be able to see if it is responding to your requests.
 
 ### Judging
 Your interface will be evaluated in two ways:
 
-1. We will take up the project on monday durring which time you will have a chance to show off your UI. We want to put those css and js skills to use. More awesome UI's are better.
+1. We will take up the project on Monday during which time you will have a chance to show off your UI. We want to put those CSS and JS skills to use. More awesome UI's are better.
 2. You will have the opportunity to control the robot throughout friday and monday (up to the deadline). If you choose to you can use this time to attempt to beat the other Student's best time through a obstical course (the nature of which will be reveiled on friday).
 
 ### HTML5 Extras (optional, for more awesomness)
@@ -129,6 +139,13 @@ The game pad API can be used to control the robot via one or both of the xbox 36
 
 * http://www.html5rocks.com/en/tutorials/doodles/gamepad/
 
+#### How to get the xbox 360 controller to work under OSX (Sometimes)
+
+1. Install the xbox 360 driver from http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver
+2. Restart your computer when prompted
+3. Hope for the best
+
+http://people.mozilla.com/~tmielczarek/mouselock+gamepad/
 
 #### Canvas
 
