@@ -7,7 +7,7 @@ Playing with a robot to learn JavaScript, AJAX and a touch of Node.js
 ``brew install nodejs``
 
 2. Use the Node Packaged Modules (npm) command to install CoffeeScript
-``npm install coffee``
+``npm install -g coffee-script``
 
 3. Clone the repository
 ``git clone https://github.com/bitmakerlabs/mc_hammer_bot.git``
@@ -17,6 +17,14 @@ Playing with a robot to learn JavaScript, AJAX and a touch of Node.js
 
 5. Install Node Package Modules
 ``npm install``
+
+6. Update your path
+``echo "PATH=/usr/local/share/npm/bin:$PATH" >> ~/.bash_profile;. ~/.bash_profile``
+
+For those of you that are having trouble running coffee, create a symlink using the code below while in your project directory
+ln -s `pwd`/node_modules/coffee-script/bin/coffee coffee
+
+Note: You may need to run coffee by using ./coffee
 
 ## Setting Up Bluetooth (Mac OSX)
 
